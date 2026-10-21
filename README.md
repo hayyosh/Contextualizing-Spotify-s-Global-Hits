@@ -2,14 +2,16 @@
 
 Python analysis of 178 trending Spotify tracks: statistical tests on genre, artist, and country vs. virality, plus an SVM model predicting song longevity.
 
-Completed for *Intermediate Data Programming* at the University of Washington.
+Completed for *Intermediate Data Programming* at the University of Washington, with Twisha Santra.
+
+**[Read the full report (PDF)](report.pdf)**
 
 ## Project Overview
 This project analyzes the Spotify Global Trends dataset to explore how genre, artist consistency, and country of origin relate to virality and viral duration across 178 trending tracks.
 
 ## Key Findings
 - Kruskal-Wallis and chi-squared tests indicate that genre, rather than virality, drives streaming momentum.
-- An SVM classifier (scikit-learn) predicts song longevity and stream change with 82% accuracy on [held-out test data].
+- An SVM classifier (scikit-learn) predicts song longevity and stream change with 82% accuracy on a held-out 20% test set.
 
 ## Dataset
 `spotify_global_trends.csv` (178 trending tracks) is included in this repo. It was originally obtained from Kaggle, but the original listing is no longer available. Place it in the project's root directory before running any code.
@@ -28,12 +30,12 @@ pip install pandas matplotlib seaborn scikit-learn scipy
 - `result_visualization.py`: Visualizations built with Seaborn and Matplotlib.
 - `machine_learning.py`: Trains and evaluates the SVM model on the cleaned data.
 - `spotify_global_trends.csv`: Data file.
+- `report.pdf`: Full written report.
 
 ## How to Run
 1. Clone or download this repository.
-2. Place `spotify_global_trends.csv` in the root project directory.
-3. In a terminal, navigate to the project directory: `cd path/to/project`
-4. Run the scripts in this order:
+2. In a terminal, navigate to the project directory: `cd path/to/project`
+3. Run the scripts in this order:
 
 ```
 python eda.py
