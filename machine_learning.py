@@ -45,7 +45,7 @@ def main():
     svm_clf = SVC(kernel="linear", C=1.0, random_state=42)
     svm_clf.fit(X_train_scaled, y_train)
 
-    # Model Evaluatiom
+    # Model Evaluation
     y_pred = svm_clf.predict(X_test_scaled)
     print(f"Accuracy: {accuracy_score(y_test, y_pred)}")
     target_names = svm_clf.classes_
