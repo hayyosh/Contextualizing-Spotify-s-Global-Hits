@@ -11,10 +11,10 @@ This project analyzes the Spotify Global Trends dataset to explore how genre, ar
 
 ## Key Findings
 - Kruskal-Wallis and chi-squared tests indicate that genre, rather than virality, drives streaming momentum.
-- An SVM classifier (scikit-learn) predicts song longevity and stream change with 82% accuracy on a held-out 20% test set.
+- A linear SVM (scikit-learn) trained on genre, viral score, and stream change classifies song longevity with 82% accuracy on a held-out 20% test set.
 
 ## Dataset
-`spotify_global_trends.csv` (178 trending tracks) is included in this repo. It was originally obtained from Kaggle, but the original listing is no longer available. Place it in the project's root directory before running any code.
+`spotify_global_trends.csv` (178 trending tracks) is included in this repo. It was originally obtained from Kaggle, but the original listing is no longer available.
 
 ## Installation
 Requires Python 3. Install the dependencies:
